@@ -1,9 +1,7 @@
 import React, { useContext, useState } from "react"
 import axios from 'axios'
-const BASE_URL = "http://localhost:3000/";
+const BASE_URL = "https://moneyminder2.onrender.com/routes/";
 const GlobalContext = React.createContext()
-
-
 export const GlobalProvider = ({children}) => {
     const [incomes, setIncomes] = useState([])
     const [expenses, setExpenses] = useState([])
